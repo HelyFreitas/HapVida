@@ -1,13 +1,16 @@
 import * as C from "./styles";
 import Logo1 from "../../assets/logo1.png";
 import LogoContent1 from "../../assets/logo-content1.png";
-import Circle from "../../assets/circle.png";
-import CircleBlue from "../../assets/circleBlue.png";
-import ContactPng from "../../assets/User.png"
-import EmployerPng from "../../assets/Employer.png"
+import ContactPng from "../../assets/User.png";
+import EmployerPng from "../../assets/Employer.png";
+import CardImg from "../../assets/cardimg.png";
 
 import { ArrowCircleRight, ArrowUpRight } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { Cards } from "../../components/Cards";
+import { VidMain } from "../../components/VidMain";
+import { Vid } from "../../components/Vid";
+import { Circles } from "../../components/Circles";
+import { CardMedias } from "../../components/CardMedias";
 
 export const Home = () => {
   return (
@@ -48,12 +51,8 @@ export const Home = () => {
           </p>
           <img src={Logo1} className="header-img" />
           <button className="header-btn">Sobre a Fusão Hapvida e GNDI</button>
-          <div className="circles">
-            <img src={CircleBlue} alt="" />
-            <img src={Circle} alt="" />
-            <img src={Circle} alt="" />
-            <img src={Circle} alt="" />
-            <img src={Circle} alt="" />
+          <div className="circles-header">
+            <Circles />
           </div>
         </div>
       </C.Header>
@@ -87,18 +86,66 @@ export const Home = () => {
             <div className="card1">
               <img className="card-img" src={ContactPng} alt="" />
               <h1 className="card-title">Seja Cliente</h1>
-              <p className="card-p">Conheça nossos planos e faça sua cotação.</p>
-              <ArrowCircleRight className="icon-card" size={28} color="#0054B8" weight="fill" />
+              <p className="card-p">
+                Conheça nossos planos e faça sua cotação.
+              </p>
+              <ArrowCircleRight
+                className="icon-card"
+                size={28}
+                color="#0054B8"
+                weight="fill"
+              />
             </div>
             <div className="card2">
               <img className="card-img" src={EmployerPng} alt="" />
               <h1 className="card-title">Empresas</h1>
               <p className="card-p">Consulte serviços e mais.</p>
-              <ArrowCircleRight className="icon-card" size={28} color="#0054B8" weight="fill" />
+              <ArrowCircleRight
+                className="icon-card"
+                size={28}
+                color="#0054B8"
+                weight="fill"
+              />
             </div>
           </section>
         </C.FirstContent>
         <hr className="divisor2" />
+        <C.SecondContent>
+          <div className="container-second-content">
+            <h1 className="second-content-title">Juntos, somos:</h1>
+            <Cards />
+          </div>
+          <section className="vid-texts">
+            <h1 className="vid-title">Vídeos Institucionais</h1>
+            <p className="vid-paragraph">
+              Conheça mais sobre a campanha Solução Nacional
+            </p>
+          </section>
+          <section className="vids-contents">
+            <VidMain />
+            <Vid />
+          </section>
+          <div className="circles-c">
+            <Circles />
+          </div>
+        </C.SecondContent>
+        <hr className="divisor3" />
+        <C.ThirdContent>
+          <C.TitleThirdContent>Na mídia</C.TitleThirdContent>
+          <div className="card-media-div">
+            <CardMedias />
+            <CardMedias />
+            <CardMedias />
+          </div>
+          <div className="btn-position">
+            <button className="third-content-btn">Ver mais notícias</button>
+          </div>
+        </C.ThirdContent>
+        <hr className="divisor4" />
+        <C.BedroomContent>
+          <h1 className="bedroom-content-title">Seja Cliente</h1>
+          <p className="bedroom-content-p">Planos para você e sua família.</p>
+        </C.BedroomContent>
       </C.Main>
     </C.Container>
   );

@@ -78,7 +78,8 @@ export const Container = styled.div`
     }
   }
 
-  .divisor {
+  .divisor,
+  .divisor4 {
     width: 100%;
     height: 7px;
 
@@ -105,6 +106,11 @@ export const Header = styled.header`
     flex-direction: column;
 
     margin-left: 145px;
+
+    .circles-header {
+      justify-content: center;
+      margin-left: 530px;
+    }
   }
 
   .header-title {
@@ -127,8 +133,6 @@ export const Header = styled.header`
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.08px;
-
-    /* Neutral / Gray 1 */
 
     color: #5b5b5f;
 
@@ -162,23 +166,24 @@ export const Header = styled.header`
 
     border: none;
   }
-
+  /* 
   .circles {
     position: absolute;
 
     top: 448px;
     left: 720px;
-  }
+  } */
 `;
 
 export const Main = styled.main`
-  .divisor2 {
+  .divisor2,
+  .divisor3 {
     width: 100%;
     height: 7px;
 
-    background-color: #0054b8;
+    margin-bottom: 65px;
 
-    margin-bottom: 100px;
+    background-color: #0054b8;
   }
 `;
 
@@ -253,7 +258,7 @@ export const FirstContent = styled.div`
   }
 
   .paragraph-main {
-    margin-left: 380px;
+    margin-left: 85px;
     margin-top: 41px;
 
     .paragraph-main-title {
@@ -262,11 +267,8 @@ export const FirstContent = styled.div`
       font-weight: 700;
       font-size: 36px;
       line-height: 117.2%;
-      /* or 42px */
 
       letter-spacing: 0.58px;
-
-      /* Azul Hapvida */
 
       color: #0054b8;
     }
@@ -279,8 +281,6 @@ export const FirstContent = styled.div`
       line-height: 30px;
       letter-spacing: 0.08px;
 
-      /* Cinza GNDI */
-
       color: #58585a;
 
       margin-bottom: 27px;
@@ -290,10 +290,11 @@ export const FirstContent = styled.div`
   .cards-itens-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 375px;
-    padding-right: 375px;
+    justify-content: space-evenly;
+
     margin-bottom: 65px;
+
+    width: 100%;
 
     .card1,
     .card2 {
@@ -303,8 +304,7 @@ export const FirstContent = styled.div`
       border-radius: 10px;
 
       width: 554px;
-
-      justify-content: center;
+      height: 160px;
 
       position: relative;
 
@@ -322,8 +322,6 @@ export const FirstContent = styled.div`
         line-height: 50px;
         letter-spacing: 0.08px;
 
-        /* Branding/Hapvida_Blue */
-
         color: #0054b8;
       }
 
@@ -334,8 +332,6 @@ export const FirstContent = styled.div`
         font-size: 16px;
         line-height: 20px;
 
-        /* Branding/Hapvida_Blue */
-
         color: #0054b8;
 
         padding-bottom: 20px;
@@ -343,15 +339,163 @@ export const FirstContent = styled.div`
 
       .icon-card {
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 10px;
       }
     }
   }
 `;
 
-export const SecondContent = styled.div``;
+export const SecondContent = styled.div`
+  .container-second-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
 
-export const ThirdContent = styled.div``;
+    .second-content-title {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: -0.92px;
 
-export const BedroomContent = styled.div``;
+      color: #0054b8;
+
+      padding-bottom: 100px;
+    }
+  }
+
+  .vid-texts {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 85px;
+
+    .vid-title {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      letter-spacing: 0.08px;
+
+      /* Cinza GNDI */
+
+      color: #58585a;
+    }
+
+    .vid-paragraph {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0.08px;
+
+      /* Cinza GNDI */
+
+      color: #58585a;
+    }
+  }
+
+  .vids-contents {
+    display: flex;
+
+    gap: 65px;
+
+    position: relative;
+  }
+
+  .circles-c {
+    margin-top: 40px;
+    margin-left: 600px;
+    margin-bottom: 40px;
+  }
+`;
+
+export const ThirdContent = styled.div`
+  .card-media-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btn-position {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 58px;
+    margin-bottom: 76px;
+  }
+
+  .third-content-btn {
+    width: 336px;
+    height: 56px;
+
+    justify-content: center;
+
+    background: #0054b8;
+    border-radius: 40px;
+    border: none;
+
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+`;
+
+export const TitleThirdContent = styled.h1`
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.08px;
+
+  color: #0054b8;
+
+  margin-top: 58px;
+  margin-left: 62px;
+  margin-bottom: 30px;
+`;
+
+export const BedroomContent = styled.div`
+  .bedroom-content-title {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.08px;
+
+    /* Branding/Hapvida_Blue */
+
+    color: #0054b8;
+
+    margin-top: 58px;
+    margin-bottom: 21px;
+  }
+
+  .bedroom-content-p {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.08px;
+
+    /* Cinza GNDI */
+
+    color: #58585a;
+  }
+`;
