@@ -38,6 +38,34 @@ export const Container = styled.div`
 
       .itens-nav {
         display: flex;
+
+        .menu-nav {
+          display: flex;
+          align-items: center;
+
+          .btn-top-nav {
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+            display: flex;
+            align-items: center;
+          }
+
+          .top-menu-p {
+            text-decoration: none;
+
+            font-family: "Source Sans Pro";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: #58585a;
+
+            padding-right: 8px;
+          }
+        }
       }
 
       .top-menu-nav {

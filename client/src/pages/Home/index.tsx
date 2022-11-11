@@ -5,7 +5,7 @@ import ContactPng from "../../assets/User.png";
 import EmployerPng from "../../assets/Employer.png";
 import CardImg from "../../assets/cardimg.png";
 
-import { ArrowCircleRight, ArrowUpRight } from "phosphor-react";
+import { ArrowCircleDown, ArrowCircleRight, ArrowUpRight } from "phosphor-react";
 import { Cards } from "../../components/Cards";
 import { VidMain } from "../../components/VidMain";
 import { Vid } from "../../components/Vid";
@@ -33,7 +33,12 @@ export const Home = () => {
             <a className="top-menu-nav" href="#">
               Rede de atendimento
             </a>
-            <p className="top-menu-nav">Acesse sua área</p>
+            <div className="menu-nav">
+              <p className="top-menu-p">Acesse sua área</p>
+              <button className="btn-top-nav">
+                <ArrowCircleDown size={20} color="#58585a" />
+              </button>
+            </div>
           </div>
           <button className="top-menu-btn">Conhecer Planos</button>
         </div>
