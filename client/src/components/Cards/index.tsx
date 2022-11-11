@@ -9,9 +9,16 @@ import Corac from "../../assets/coracao.png";
 import Cruz from "../../assets/cruz.png";
 import Dente from "../../assets/dente.png";
 
-export const Cards = () => {
+interface CardsProps {
+  title : string;
+}
+
+export const Cards = (props : CardsProps) => {
   return (
     <S.Container>
+      <div className="container-second-content">
+        <h1 className="second-content-title">{props.title}</h1>
+      </div>
       <div className="content1-card">
         <section className="cards-sect">
           <div className="card-div" />

@@ -1,0 +1,82 @@
+import { HeaderSecond } from "../../components/HeaderSecond";
+import { NavBar } from "../../components/NavBar";
+
+import HeaderBack from "../../assets/backsecondcontent.png";
+import LogoHapVida from "../../assets/logohapvida.png";
+import LogoNotreDame from "../../assets/notrelogo.png";
+
+import * as C from "./styles";
+import { Vid } from "../../components/Vid";
+import { VidMain } from "../../components/VidMain";
+import { Cards } from "../../components/Cards";
+import { ButtonContent } from "../../components/ButtonContent";
+
+export const SecondPage = () => {
+  return (
+    <C.Container>
+      <NavBar />
+      <HeaderSecond
+        img={HeaderBack}
+        title="Integração Hapvida e GNDI"
+        paragraph="Fique por dentro das novidades."
+      />
+      <C.Main>
+        <div className="title-main">
+          <h1 className="title-main-second">Sobre a Fusão Hapvida e GNDI</h1>
+        </div>
+        <div className="vids-main">
+          <VidMain />
+          <Vid />
+        </div>
+        <div className="text-container">
+          <p className="content-text">
+            Começa mais um capítulo importante da história da saúde suplementar
+            no Brasil: inicia a fusão Hapvida e NotreDame Intermédica, e isso só
+            foi possível em razão da similaridade dos nossos valores de dar
+            acesso à saúde de qualidade para a população brasileira e da
+            competência do trabalho das nossas equipes.
+            <br />
+            <br /> Com essa união, formamos o maior sistema de saúde suplementar
+            do Brasil e uma das maiores empresas verticalizadas do mundo.
+            <br />
+            <br /> A combinação de negócios entre as Companhias possibilita a
+            integração de uma vasta gama de produtos, estruturas hospitalares,
+            recursos e soluções em benefício de clientes, beneficiários e
+            prospects de ambas as Empresas.
+            <br />
+            <br /> O Hapvida tem forte atuação nas regiões Norte, Nordeste,
+            Centro-Oeste e interior de São Paulo, com 43 anos de atuação no
+            mercado, 7,4 milhões de beneficiários de Saúde e Odontologia e uma
+            ampla rede com 477 unidades próprias.
+            <br />
+            <br /> O GNDI possui mais de 50 anos de história e tem forte atuação
+            no mercado de Saúde das regiões Sudeste e Sul. São mais de 7,8
+            milhões de beneficiários e uma ampla rede assistencial de
+            atendimento composta por unidades próprias e credenciadas. Atendemos
+            mais de 15 milhões de beneficiários, entre Saúde e Odontologia, com
+            Rede Própria, em todas as regiões do País.
+            <br />
+            <br /> Juntos, somos mais fortes!
+          </p>
+        </div>
+        <C.HpvidaNotreDame>
+          <div className="hapvida-div">
+            <img src={LogoHapVida} alt="" />
+            <hr className="divs-hr" />
+            <strong>Hapvida, saúde para valer.</strong>
+            <p>O sistema de medicina e odontologia que mais cresce no Brasil</p>
+            <ButtonContent text="Ler conteúdo" />
+          </div>
+          <div className="notredame-div">
+            <img src={LogoNotreDame} alt="" />
+            <hr className="divs-hr" />
+            <strong>Notredame Intermédica</strong>
+            <p>Melhores soluções em saúde e odontologia</p>
+            <ButtonContent text="Ler conteúdo" />
+          </div>
+        </C.HpvidaNotreDame>
+        <Cards title="Hapvida + NotreDame juntas oferecem:" />
+      </C.Main>
+    </C.Container>
+  );
+};

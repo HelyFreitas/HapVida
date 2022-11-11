@@ -4,6 +4,27 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+  .container-second-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .second-content-title {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: -0.92px;
+
+      color: #0054b8;
+
+      padding-bottom: 100px;
+    }
+  }
+
   .content1-card,
   .content2-card {
     display: flex;

@@ -1,51 +1,22 @@
 import * as C from "./styles";
 import Logo1 from "../../assets/logo1.png";
-import LogoContent1 from "../../assets/logo-content1.png";
 import ContactPng from "../../assets/User.png";
 import EmployerPng from "../../assets/Employer.png";
-import CardImg from "../../assets/cardimg.png";
 
-import { ArrowCircleDown, ArrowCircleRight, ArrowUpRight } from "phosphor-react";
+import { ArrowCircleRight } from "phosphor-react";
 import { Cards } from "../../components/Cards";
 import { VidMain } from "../../components/VidMain";
 import { Vid } from "../../components/Vid";
 import { Circles } from "../../components/Circles";
 import { CardMedias } from "../../components/CardMedias";
 import { Footer } from "../../components/Footer";
+import { NavBar } from "../../components/NavBar";
+import { Form } from "../../components/Form";
 
 export const Home = () => {
   return (
     <C.Container>
-      <section className="top-menu">
-        <div className="top-menu-content1">
-          <p className="top-menu-content1-p">Contraste</p>
-          <img src={LogoContent1} alt="" className="top-menu-content1-img" />
-        </div>
-        <div className="top-menu-content2">
-          <img src={Logo1} alt="" className="top-container-logo" />
-          <div className="itens-nav">
-            <a className="top-menu-nav" href="#">
-              Institucional
-            </a>
-            <a className="top-menu-nav" href="#">
-              Investidores <ArrowUpRight size={14} />
-            </a>
-            <a className="top-menu-nav" href="#">
-              Rede de atendimento
-            </a>
-            <div className="menu-nav">
-              <p className="top-menu-p">Acesse sua área</p>
-              <button className="btn-top-nav">
-                <ArrowCircleDown size={20} color="#58585a" />
-              </button>
-            </div>
-          </div>
-          <button className="top-menu-btn">Conhecer Planos</button>
-        </div>
-      </section>
-
-      {/*//////////////////////////////////////////////////////////////////////////*/}
-
+      <NavBar />
       <C.Header>
         <div className="divdiv">
           <h1 className="header-title">
@@ -117,10 +88,7 @@ export const Home = () => {
         </C.FirstContent>
         <hr className="divisor2" />
         <C.SecondContent>
-          <div className="container-second-content">
-            <h1 className="second-content-title">Juntos, somos:</h1>
-            <Cards />
-          </div>
+            <Cards title="Juntos, somos:" />
           <section className="vid-texts">
             <h1 className="vid-title">Vídeos Institucionais</h1>
             <p className="vid-paragraph">
@@ -139,49 +107,38 @@ export const Home = () => {
         <C.ThirdContent>
           <C.TitleThirdContent>Na mídia</C.TitleThirdContent>
           <div className="card-media-div">
-            <CardMedias />
-            <CardMedias />
-            <CardMedias />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+        você: praticar mais..."
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+        você: praticar mais..."
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+        você: praticar mais..."
+              date="12/09/2022"
+            />
           </div>
           <div className="btn-position">
             <button className="third-content-btn">Ver mais notícias</button>
           </div>
         </C.ThirdContent>
         <hr className="divisor4" />
-        <C.BedroomContent>
-          <div className="bedroom-contents-texts">
-            <h1 className="bedroom-content-title">Seja Cliente</h1>
-            <p className="bedroom-content-p">Planos para você e sua família.</p>
-          </div>
-
-          <C.Form>
-            <input className="inputs-bedroom" type="text" placeholder="Nome" />
-            <input
-              className="inputs-bedroom"
-              type="email"
-              placeholder="E-mail"
-            />
-            <input
-              className="inputs-bedroom"
-              type="tel"
-              placeholder="Celular / Whatsapp"
-            />
-          </C.Form>
-          <C.Selects>
-            <select className="inputs-selects-bedroom">
-              <option value="">Estado</option>
-            </select>
-            <select className="inputs-selects-bedroom">
-              <option value="">Cidade</option>
-            </select>
-            <select className="inputs-selects-bedroom">
-              <option value="">Seu perfil</option>
-            </select>
-          </C.Selects>
-          <div className="btn-bedroom-content">
-            <button className="bedroom-btn">Realizar Cotação</button>
-          </div>
-        </C.BedroomContent>
+        <Form
+          title="Seja Cliente"
+          paragraph="Planos para você e sua família."
+          button="Realizar Cotação"
+        />
         <hr className="divisor5" />
       </C.Main>
 
