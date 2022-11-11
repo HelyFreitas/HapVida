@@ -11,6 +11,7 @@ import { VidMain } from "../../components/VidMain";
 import { Vid } from "../../components/Vid";
 import { Circles } from "../../components/Circles";
 import { CardMedias } from "../../components/CardMedias";
+import { Footer } from "../../components/Footer";
 
 export const Home = () => {
   return (
@@ -143,10 +144,43 @@ export const Home = () => {
         </C.ThirdContent>
         <hr className="divisor4" />
         <C.BedroomContent>
-          <h1 className="bedroom-content-title">Seja Cliente</h1>
-          <p className="bedroom-content-p">Planos para você e sua família.</p>
+          <div className="bedroom-contents-texts">
+            <h1 className="bedroom-content-title">Seja Cliente</h1>
+            <p className="bedroom-content-p">Planos para você e sua família.</p>
+          </div>
+
+          <C.Form>
+            <input className="inputs-bedroom" type="text" placeholder="Nome" />
+            <input
+              className="inputs-bedroom"
+              type="email"
+              placeholder="E-mail"
+            />
+            <input
+              className="inputs-bedroom"
+              type="tel"
+              placeholder="Celular / Whatsapp"
+            />
+          </C.Form>
+          <C.Selects>
+            <select className="inputs-selects-bedroom">
+              <option value="">Estado</option>
+            </select>
+            <select className="inputs-selects-bedroom">
+              <option value="">Cidade</option>
+            </select>
+            <select className="inputs-selects-bedroom">
+              <option value="">Seu perfil</option>
+            </select>
+          </C.Selects>
+          <div className="btn-bedroom-content">
+            <button className="bedroom-btn">Realizar Cotação</button>
+          </div>
         </C.BedroomContent>
+        <hr className="divisor5" />
       </C.Main>
+
+      <Footer />
     </C.Container>
   );
 };
