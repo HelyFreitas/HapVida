@@ -61,20 +61,21 @@ export const SecondPage = () => {
         </div>
         <C.HpvidaNotreDame>
           <div className="hapvida-div">
-            <img src={LogoHapVida} alt="" />
+            <img className="img-div" src={LogoHapVida} alt="" />
             <hr className="divs-hr" />
-            <strong>Hapvida, saúde para valer.</strong>
-            <p>O sistema de medicina e odontologia que mais cresce no Brasil</p>
+            <strong className="strng-p">Hapvida, saúde para valer.</strong>
+            <p className="content-paragraph">O sistema de medicina e odontologia<br/> que mais cresce no Brasil</p>
             <ButtonContent text="Ler conteúdo" />
           </div>
           <div className="notredame-div">
-            <img src={LogoNotreDame} alt="" />
+            <img className="img-div" src={LogoNotreDame} alt="" />
             <hr className="divs-hr" />
-            <strong>Notredame Intermédica</strong>
-            <p>Melhores soluções em saúde e odontologia</p>
+            <strong className="strng-p">Notredame Intermédica</strong>
+            <p className="content-paragraph">Melhores soluções em saúde e<br/> odontologia</p>
             <ButtonContent text="Ler conteúdo" />
           </div>
         </C.HpvidaNotreDame>
+        <hr className="divisorContent" />
         <Cards title="Hapvida + NotreDame juntas oferecem:" />
       </C.Main>
     </C.Container>

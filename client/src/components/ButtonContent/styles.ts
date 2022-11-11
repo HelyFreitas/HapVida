@@ -21,4 +21,6 @@ export const Button = styled.button`
 
   padding-top: 8px;
   padding-bottom: 8px;
+
+  border: none;
 `;
