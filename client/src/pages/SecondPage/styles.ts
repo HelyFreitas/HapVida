@@ -44,6 +44,12 @@ export const Main = styled.main`
     position: relative;
 
     margin-bottom: 94px;
+
+    .circles-main {
+      position: absolute;
+      top: 391px;
+      left: 616px;
+    }
   }
 
   .text-container {
@@ -67,6 +73,22 @@ export const Main = styled.main`
     letter-spacing: 0.08px;
 
     color: #5b5b5f;
+  }
+
+  .divisor-primary {
+    background-color: #f49e00;
+
+    width: 100%;
+    height: 7px;
+  }
+
+  .divisor-second {
+    background-color: #0054b8;
+
+    width: 100%;
+    height: 7px;
+
+    margin-bottom: 46px;
   }
 `;
 
@@ -127,7 +149,7 @@ export const HpvidaNotreDame = styled.div`
     color: #58585a;
   }
 
-  .img-div{
+  .img-div {
     width: 299px;
     height: 104px;
 

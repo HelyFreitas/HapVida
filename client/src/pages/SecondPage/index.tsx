@@ -10,6 +10,9 @@ import { Vid } from "../../components/Vid";
 import { VidMain } from "../../components/VidMain";
 import { Cards } from "../../components/Cards";
 import { ButtonContent } from "../../components/ButtonContent";
+import { CardPrice } from "../../components/CardPrice";
+import { Footer } from "../../components/Footer";
+import { Circles } from "../../components/Circles";
 
 export const SecondPage = () => {
   return (
@@ -27,6 +30,9 @@ export const SecondPage = () => {
         <div className="vids-main">
           <VidMain />
           <Vid />
+          <div className="circles-main">
+            <Circles />
+          </div>
         </div>
         <div className="text-container">
           <p className="content-text">
@@ -64,20 +70,29 @@ export const SecondPage = () => {
             <img className="img-div" src={LogoHapVida} alt="" />
             <hr className="divs-hr" />
             <strong className="strng-p">Hapvida, saúde para valer.</strong>
-            <p className="content-paragraph">O sistema de medicina e odontologia<br/> que mais cresce no Brasil</p>
+            <p className="content-paragraph">
+              O sistema de medicina e odontologia
+              <br /> que mais cresce no Brasil
+            </p>
             <ButtonContent text="Ler conteúdo" />
           </div>
           <div className="notredame-div">
             <img className="img-div" src={LogoNotreDame} alt="" />
             <hr className="divs-hr" />
             <strong className="strng-p">Notredame Intermédica</strong>
-            <p className="content-paragraph">Melhores soluções em saúde e<br/> odontologia</p>
+            <p className="content-paragraph">
+              Melhores soluções em saúde e<br /> odontologia
+            </p>
             <ButtonContent text="Ler conteúdo" />
           </div>
         </C.HpvidaNotreDame>
         <hr className="divisorContent" />
         <Cards title="Hapvida + NotreDame juntas oferecem:" />
+        <hr className="divisor-primary" />
+        <CardPrice />
+        <hr className="divisor-second" />
       </C.Main>
+      <Footer />
     </C.Container>
   );
 };
