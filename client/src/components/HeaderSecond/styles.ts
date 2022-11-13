@@ -17,6 +17,8 @@ export const Container = styled.header`
 
     padding-left: 80px;
 
+    gap: 10px;
+
     .header-x {
       display: flex;
 
@@ -74,6 +76,8 @@ export const Container = styled.header`
       align-items: center;
       justify-content: center;
 
+      text-decoration: none;
+
       color: #0054b8;
     }
 
@@ -107,16 +111,17 @@ export const Container = styled.header`
   .second-content {
     /* width: 40%; */
     position: relative;
+    height: auto;
 
     .second-content-content {
-      /* height: 100%; */
+      height: 100%;
       /* width: 100%; */
 
       display: flex;
 
       .img-header-component {
-        /* width: 100%; */
-        /* height: 100%; */
+        width: 100%;
+        height: 100%;
 
         border-left: white 2px blur(4px);
       }

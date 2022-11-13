@@ -14,7 +14,7 @@ import { CardPrice } from "../../components/CardPrice";
 import { Footer } from "../../components/Footer";
 import { Circles } from "../../components/Circles";
 
-export const SecondPage = () => {
+export const AboutInstitutional = () => {
   return (
     <C.Container>
       <NavBar />

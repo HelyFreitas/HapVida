@@ -1,4 +1,5 @@
 import { ArrowLeft } from "phosphor-react";
+import { Link } from "react-router-dom";
 import * as C from "./styles";
 
 interface HeaderProps {
@@ -15,10 +16,10 @@ export const HeaderSecond = (props: HeaderProps) => {
           <p className="p-header-x">&#91;Home&#93;&nbsp;&gt;</p>
           <p className="p-nivel-x">&nbsp;&#91;Nível X&#93;</p>
         </section>
-        <button className="btn-header-second">
+        <Link to="/" className="btn-header-second">
           <ArrowLeft size={16} color="#0054b8" />
-          &nbsp;Sair
-        </button>
+          &nbsp;Voltar
+        </Link>
         <h1 className="title-header">{props.title}</h1>
         <p className="paragraph-header">{props.paragraph}</p>
       </div>
