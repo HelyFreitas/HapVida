@@ -105,6 +105,8 @@ export const Container = styled.header`
       color: #5b5b5f;
 
       margin-bottom: 90px;
+
+      width: 526px;
     }
   }
 
