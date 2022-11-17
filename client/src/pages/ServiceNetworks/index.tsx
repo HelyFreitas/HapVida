@@ -1,19 +1,22 @@
 import { HeaderSecond } from "../../components/HeaderSecond";
-import { NavBar } from "../../components/NavBar";
 
 import HeaderBack from "../../assets/backsecondcontent.png";
 
 import * as C from "./styles";
 import { Footer } from "../../components/Footer";
+import { NavbarBottom } from "../../components/NavbarBottom";
+import { NavbarTop } from "../../components/NavbarTop";
 
 export const ServiceNetworks = () => {
   return (
     <C.Container>
-      <NavBar />
+      <NavbarTop />
+      <NavbarBottom />
       <HeaderSecond
         img={HeaderBack}
         paragraph="Conheça a sua rede de atendimento exclusiva! Nosso time de profissionais está pronto para ajudar você a tirar dúvidas ou fazer solicitações."
         title="Rede de atendimento"
+        link="/"
       />
 
       <C.Main>
@@ -60,9 +63,6 @@ export const ServiceNetworks = () => {
           </C.FormNetwork>
         </C.FormContainer>
       </C.Main>
-      <div className="row-hr2">
-        <hr className="hr-row2" />
-      </div>
       <Footer />
     </C.Container>
   );

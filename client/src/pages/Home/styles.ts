@@ -29,8 +29,6 @@ export const Header = styled.header`
     justify-content: center;
     flex-direction: column;
 
-    margin-left: 145px;
-
     .circles-header {
       justify-content: center;
       margin-left: 530px;
@@ -94,8 +92,7 @@ export const Header = styled.header`
 
 export const Main = styled.main`
   .divisor2,
-  .divisor3,
-  .divisor5 {
+  .divisor3 {
     width: 100%;
     height: 7px;
 
@@ -334,6 +331,8 @@ export const ThirdContent = styled.div`
     width: 336px;
     height: 56px;
 
+    display: flex;
+    align-items: center;
     justify-content: center;
 
     background: #0054b8;
@@ -346,6 +345,8 @@ export const ThirdContent = styled.div`
     font-size: 20px;
     line-height: 25px;
     text-align: center;
+
+    text-decoration: none;
 
     color: #ffffff;
   }
@@ -364,4 +365,10 @@ export const TitleThirdContent = styled.h1`
   margin-top: 58px;
   margin-left: 65px;
   margin-bottom: 30px;
+`;
+
+export const AlignDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 60%;
 `;

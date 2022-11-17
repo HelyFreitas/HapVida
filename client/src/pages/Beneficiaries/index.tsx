@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { CardMedias } from "../../components/CardMedias";
 import { Footer } from "../../components/Footer";
 import { HeaderSecond } from "../../components/HeaderSecond";
-import { NavBar } from "../../components/NavBar";
+import { NavbarBottom } from "../../components/NavbarBottom";
+import { NavbarTop } from "../../components/NavbarTop";
 
 import BackHeader from "..//../assets/backcontainer.png";
 
@@ -12,11 +13,13 @@ import * as C from "./styles";
 export const Beneficiaries = () => {
   return (
     <C.Container>
-      <NavBar />
+      <NavbarTop />
+      <NavbarBottom />
       <HeaderSecond
         img={BackHeader}
         paragraph="Acesse sua área para marcar consultas e exames, visualizar sua carteirinha digital ou alterar informações."
         title="Beneficiários"
+        link="/"
       />
       <C.Main>
         <C.Content1>

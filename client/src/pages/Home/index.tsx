@@ -10,28 +10,36 @@ import { Vid } from "../../components/Vid";
 import { Circles } from "../../components/Circles";
 import { CardMedias } from "../../components/CardMedias";
 import { Footer } from "../../components/Footer";
-import { NavBar } from "../../components/NavBar";
 import { Form } from "../../components/Form";
+import { Link } from "react-router-dom";
+import { NavbarBottom } from "../../components/NavbarBottom";
+import { NavbarTop } from "../../components/NavbarTop";
 
 export const Home = () => {
   return (
     <C.Container>
-      <NavBar />
+      <NavbarTop />
+      <NavbarBottom />
       <C.Header>
-        <div className="divdiv">
-          <h1 className="header-title">
-            Somos
-            <br /> Hapvida &<br /> NotreDame Intermédica
-          </h1>
-          <p className="header-p">
-            A maior rede própria de atendimento do Brasil.
-          </p>
-          <img src={Logo1} className="header-img" />
-          <button className="header-btn">Sobre a Fusão Hapvida e GNDI</button>
-          <div className="circles-header">
-            <Circles />
+        <C.AlignDiv>
+          <div className="divdiv">
+            <h1 className="header-title">
+              Somos
+              <br />
+              Hapvida
+              <br />
+              NotreDame Intermédica
+            </h1>
+            <p className="header-p">
+              A maior rede própria de atendimento do Brasil.
+            </p>
+            <img src={Logo1} className="header-img" />
+            <button className="header-btn">Sobre a Fusão Hapvida e GNDI</button>
+            <div className="circles-header">
+              <Circles />
+            </div>
           </div>
-        </div>
+        </C.AlignDiv>
       </C.Header>
       <hr className="divisor" />
       <C.Main>
@@ -88,7 +96,7 @@ export const Home = () => {
         </C.FirstContent>
         <hr className="divisor2" />
         <C.SecondContent>
-            <Cards title="Juntos, somos:" />
+          <Cards title="Juntos, somos:" />
           <section className="vid-texts">
             <h1 className="vid-title">Vídeos Institucionais</h1>
             <p className="vid-paragraph">
@@ -109,28 +117,28 @@ export const Home = () => {
           <div className="card-media-div">
             <CardMedias
               title="Desafio verão GNDI + Fit Anywhere"
-              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
-        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit Anywhere, o maior
+        aplicativo de wellness do Brasil, se juntaram para propor um desafio a
         você: praticar mais..."
               date="12/09/2022"
             />
             <CardMedias
               title="Desafio verão GNDI + Fit Anywhere"
-              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
-        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit Anywhere, o maior
+        aplicativo de wellness do Brasil, se juntaram para propor um desafio a
         você: praticar mais..."
               date="12/09/2022"
             />
             <CardMedias
               title="Desafio verão GNDI + Fit Anywhere"
-              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
-        aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit Anywhere, o maior
+        aplicativo de wellness do Brasil, se juntaram para propor um desafio a
         você: praticar mais..."
               date="12/09/2022"
             />
           </div>
           <div className="btn-position">
-            <button className="third-content-btn">Ver mais notícias</button>
+            <Link to="/notices" className="third-content-btn">Ver mais notícias</Link>
           </div>
         </C.ThirdContent>
         <hr className="divisor4" />
@@ -139,7 +147,6 @@ export const Home = () => {
           paragraph="Planos para você e sua família."
           button="Realizar Cotação"
         />
-        <hr className="divisor5" />
       </C.Main>
 
       <Footer />

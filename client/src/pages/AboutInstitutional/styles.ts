@@ -81,15 +81,6 @@ export const Main = styled.main`
     width: 100%;
     height: 7px;
   }
-
-  .divisor-second {
-    background-color: #0054b8;
-
-    width: 100%;
-    height: 7px;
-
-    margin-bottom: 46px;
-  }
 `;
 
 export const HpvidaNotreDame = styled.div`

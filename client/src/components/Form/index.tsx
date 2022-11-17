@@ -1,12 +1,12 @@
 import * as C from "./styles";
 
 interface FormProps {
-    title : string;
-    paragraph : string;
-    button : string;
+  title: string;
+  paragraph: string;
+  button: string;
 }
 
-export const Form = (props : FormProps) => {
+export const Form = (props: FormProps) => {
   return (
     <C.BedroomContent>
       <div className="bedroom-contents-texts">

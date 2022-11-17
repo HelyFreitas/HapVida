@@ -106,7 +106,8 @@ export const SelectsForm = styled.div`
   align-items: center;
   justify-content: center;
 
-  gap: 56px;
+  /* gap: 70px */
+  gap: 50px;
 
   margin-bottom: 40px;
 
@@ -115,6 +116,8 @@ export const SelectsForm = styled.div`
     flex-direction: row;
     align-items: center;
     padding: 12px;
+    /* padding: 10px 230px 10px 10px; */
+
     gap: 16px;
 
     width: 371px;

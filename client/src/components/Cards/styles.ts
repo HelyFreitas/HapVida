@@ -29,18 +29,18 @@ export const Container = styled.div`
   .content2-card {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     width: 100%;
 
     margin-bottom: 104px;
-    gap: 100px;
+    gap: 120px;
   }
 
   .content3-card {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     width: 100%;
 

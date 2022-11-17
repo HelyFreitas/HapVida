@@ -1,8 +1,17 @@
 import styled from "styled-components";
 
 export const BedroomContent = styled.div`
+  /* border-bottom: 7px solid #f39a00; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 45px;
+
   .bedroom-contents-texts {
-    margin-left: 45px;
+    /* margin-left: 45px; */
+    width: 88%;
   }
 
   .bedroom-content-title {
@@ -64,7 +73,9 @@ export const BedroomContent = styled.div`
 export const Form = styled.form`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  gap: 50px;
 
   margin-top: 35px;
 
@@ -88,6 +99,8 @@ export const Form = styled.form`
     order: 0;
     flex-grow: 0;
 
+    outline: none;
+
     &::placeholder {
       color: #0054b8;
     }
@@ -97,7 +110,9 @@ export const Form = styled.form`
 export const Selects = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  gap: 50px;
 
   margin-top: 26px;
 
@@ -122,6 +137,8 @@ export const Selects = styled.div`
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    outline: none;
 
     color: #0054b8;
   }

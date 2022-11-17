@@ -1,5 +1,4 @@
 import { HeaderSecond } from "../../components/HeaderSecond";
-import { NavBar } from "../../components/NavBar";
 
 import HeaderBack from "../../assets/backsecondcontent.png";
 import LogoHapVida from "../../assets/logohapvida.png";
@@ -13,15 +12,19 @@ import { ButtonContent } from "../../components/ButtonContent";
 import { CardPrice } from "../../components/CardPrice";
 import { Footer } from "../../components/Footer";
 import { Circles } from "../../components/Circles";
+import { NavbarTop } from "../../components/NavbarTop";
+import { NavbarBottom } from "../../components/NavbarBottom";
 
 export const AboutInstitutional = () => {
   return (
     <C.Container>
-      <NavBar />
+      <NavbarBottom />
+      <NavbarTop />
       <HeaderSecond
         img={HeaderBack}
         title="Integração Hapvida e GNDI"
         paragraph="Fique por dentro das novidades."
+        link="/"
       />
       <C.Main>
         <div className="title-main">
@@ -90,7 +93,6 @@ export const AboutInstitutional = () => {
         <Cards title="Hapvida + NotreDame juntas oferecem:" />
         <hr className="divisor-primary" />
         <CardPrice />
-        <hr className="divisor-second" />
       </C.Main>
       <Footer />
     </C.Container>

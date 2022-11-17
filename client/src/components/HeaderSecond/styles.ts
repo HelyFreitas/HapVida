@@ -13,6 +13,7 @@ export const Container = styled.header`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 
     padding-left: 80px;
@@ -106,18 +107,16 @@ export const Container = styled.header`
 
       margin-bottom: 90px;
 
-      width: 526px;
+      width: 600px;
     }
   }
 
   .second-content {
-    /* width: 40%; */
     position: relative;
     height: auto;
 
     .second-content-content {
       height: 100%;
-      /* width: 100%; */
 
       display: flex;
 
@@ -129,19 +128,15 @@ export const Container = styled.header`
       }
     }
 
-    .abs-div {
-      /* width: 100%; */
-
-      box-shadow: 2px -4px 10px 4px white;
-      background: white;
-      /* z-index: 1; */
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: white;
+    /* .abs-div {
       height: 100%;
-      width: 10px;
-    }
+      width: 20px;
+
+      filter: drop-shadow(-15px 0px 11px #000000);
+      -webkit-filter: drop-shadow(-15px 0px 11px #000000);
+      -moz-filter: drop-shadow(-15px 0px 11px #000000);
+    } */
   }
 `;
+
+export const Content1 = styled.div``;
