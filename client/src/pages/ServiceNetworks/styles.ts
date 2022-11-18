@@ -28,7 +28,7 @@ export const Main = styled.main`
     margin-bottom: 62px;
 
     .hr-row {
-      width: 90%;
+      width: 100%;
       height: 1px;
 
       background-color: #58585a;
@@ -77,7 +77,7 @@ export const SelectAndBtn = styled.div`
   }
 
   .selects-form-btn {
-    width: 335px;
+    width: 340px;
     height: 56px;
 
     background: #0054b8;
@@ -113,7 +113,7 @@ export const SelectsForm = styled.div`
 
     gap: 16px;
 
-    width: 371px;
+    width: 340px;
     height: 48px;
 
     color: #0054b8;
@@ -225,6 +225,6 @@ export const FormNetwork = styled.div`
 `;
 
 export const AlignContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

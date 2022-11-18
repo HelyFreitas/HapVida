@@ -4,8 +4,7 @@ export const Container = styled.div``;
 
 export const PositionTitle = styled.div`
   display: flex;
-  justify-content: center;
-
+  
   margin-top: 60px;
 `;
 
@@ -25,27 +24,20 @@ export const Title = styled.h1`
 export const CardContainer = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
 
   padding-bottom: 74px;
 
-  gap: 60px;
-
-  border-bottom: 7px solid #F39A00;
+  border-bottom: 7px solid #f39a00;
 `;
 
 export const FirstCards = styled.div`
   display: flex;
-  justify-content: center;
-
-  gap: 45px;
+  justify-content: space-between;
 `;
 
 export const SecondsCards = styled.div`
   display: flex;
-  justify-content: center;
-
-  gap: 45px;
+  justify-content: space-between;
 `;
 
 export const ButtonContainer = styled.div`
@@ -53,4 +45,14 @@ export const ButtonContainer = styled.div`
   justify-content: center;
 
   gap: 6px;
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1100px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 60px;
 `;

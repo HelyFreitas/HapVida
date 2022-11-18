@@ -153,6 +153,6 @@ export const HpvidaNotreDame = styled.div`
 `;
 
 export const AlignContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

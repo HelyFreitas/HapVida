@@ -26,36 +26,43 @@ export const Plans = () => {
         link="/"
       />
       <C.Content1>
-        <C.Title>Escolha a melhor opção:</C.Title>
-        <C.CardsContainer>
-          <C.FirstCard>
-            <C.FirstCardImg src={User} />
-            <C.TitleFirstCard>Planos Individuais e Familiares</C.TitleFirstCard>
-            <C.ParagraphFirstCard>
-              Veja as soluções exclusivas para você e seus familiares.
-            </C.ParagraphFirstCard>
-          </C.FirstCard>
-          <C.SecondCard>
-            <C.SecondCardImg src={Home} />
-            <C.TitleSecondCard>Planos PME</C.TitleSecondCard>
-            <C.ParagraphSecondCard>
-              Veja as soluções exclusivas para pequenas e médias empresas
-            </C.ParagraphSecondCard>
-          </C.SecondCard>
-          <C.ThirdCard>
-            <C.ThirdCardImg src={Employer} />
-            <C.TitleThirdCard>Planos Empresa</C.TitleThirdCard>
-            <C.ParagraphThirdCard>
-              Veja as soluções corporativas exclusivas
-            </C.ParagraphThirdCard>
-          </C.ThirdCard>
-        </C.CardsContainer>
+        <C.AlignContent>
+          <C.Title>Escolha a melhor opção:</C.Title>
+          <C.CardsContainer>
+            <C.FirstCard>
+              <C.FirstCardImg src={User} />
+              <C.TitleFirstCard>
+                Planos Individuais e Familiares
+              </C.TitleFirstCard>
+              <C.ParagraphFirstCard>
+                Veja as soluções exclusivas para você e seus familiares.
+              </C.ParagraphFirstCard>
+            </C.FirstCard>
+            <C.SecondCard>
+              <C.SecondCardImg src={Home} />
+              <C.TitleSecondCard>Planos PME</C.TitleSecondCard>
+              <C.ParagraphSecondCard>
+                Veja as soluções exclusivas para pequenas e médias empresas
+              </C.ParagraphSecondCard>
+            </C.SecondCard>
+            <C.ThirdCard>
+              <C.ThirdCardImg src={Employer} />
+              <C.TitleThirdCard>Planos Empresa</C.TitleThirdCard>
+              <C.ParagraphThirdCard>
+                Veja as soluções corporativas exclusivas
+              </C.ParagraphThirdCard>
+            </C.ThirdCard>
+          </C.CardsContainer>
+        </C.AlignContent>
       </C.Content1>
       <Form
         title="Seja Cliente"
         paragraph="Planos para você e sua família."
         button="Realizar Cotação"
       />
+
+      <hr className="row-hr" />
+
       <Cards title="Hapvida + NotreDame juntas oferecem:" />
       <Footer />
     </C.Container>

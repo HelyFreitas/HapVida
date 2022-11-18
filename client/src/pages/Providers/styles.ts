@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    .divisorContent{
-        width: 100%;
-        height: 10px;
+  .divisorContent {
+    width: 100%;
+    height: 10px;
 
-        background-color: #0054b8;
+    background-color: #0054b8;
 
-        margin-bottom: 46px;
-    }
+    margin-bottom: 46px;
+  }
 
   .cards-container {
     margin-top: 78px;
@@ -16,16 +16,18 @@ export const Container = styled.div`
 
   .cards-provider {
     display: flex;
-    /* justify-content: space-around; */
-    gap: 134px;
+    justify-content: space-between;
+
     padding-bottom: 114px;
-    padding-left: 100px;
 
     margin-top: 80px;
   }
 `;
 
 export const Content1 = styled.div`
+  display: flex;
+  justify-content: center;
+
   border-top: 7px solid #0054b8;
 `;
 
@@ -41,11 +43,9 @@ export const TitleContent = styled.h1`
   padding-bottom: 44px;
 
   color: #0054b8;
-
-  justify-content: center;
+  
   display: flex;
   padding-top: 76px;
-  width: 35%;
 `;
 
 export const Content1Container = styled.div``;
@@ -194,4 +194,14 @@ export const FormBtn = styled.button`
 
   margin-top: 20px;
   margin-bottom: 112px;
+`;
+
+export const ContentCards = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1100px;
+  width: 100%;
 `;

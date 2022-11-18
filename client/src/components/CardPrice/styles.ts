@@ -18,7 +18,7 @@ export const CardContainer = styled.div`
     justify-content: center;
     height: 100%;
     gap: 30px;
-    width: 50%;
+    width: 57%;
     align-items: center;
   }
 
@@ -64,6 +64,6 @@ export const CardContainer = styled.div`
 `;
 
 export const AlignContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

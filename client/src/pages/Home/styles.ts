@@ -75,6 +75,8 @@ export const Header = styled.header`
     font-size: 20px;
     line-height: 25px;
     text-align: center;
+    
+    text-decoration: none;
 
     color: #ffffff;
 
@@ -220,7 +222,7 @@ export const FirstContent = styled.div`
       border-left: 10px solid #0054b8;
       border-radius: 10px;
 
-      width: 554px;
+      width: 500px;
       height: 160px;
 
       position: relative;
@@ -374,16 +376,16 @@ export const TitleThirdContent = styled.h1`
 `;
 
 export const AlignHeader = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;
 
 export const AlignFirstContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;
 
 export const AlignSecondContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

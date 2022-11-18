@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerLimit = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;
 

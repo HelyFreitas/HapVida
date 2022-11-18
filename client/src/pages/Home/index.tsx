@@ -33,7 +33,7 @@ export const Home = () => {
               A maior rede própria de atendimento do Brasil.
             </p>
             <img src={Logo1} className="header-img" />
-            <button className="header-btn">Sobre a Fusão Hapvida e GNDI</button>
+            <Link to="/about-institutional" className="header-btn">Sobre a Fusão Hapvida e GNDI</Link>
             <div className="circles-header">
               <Circles />
             </div>

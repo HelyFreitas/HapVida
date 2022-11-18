@@ -23,66 +23,68 @@ export const Notices = () => {
         link="/"
       />
       <C.CardContainer>
-        <C.PositionTitle>
-          <C.Title>Todas as Notícias</C.Title>
-        </C.PositionTitle>
-        <C.FirstCards>
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+        <C.AlignContent>
+          <C.PositionTitle>
+            <C.Title>Todas as Notícias</C.Title>
+          </C.PositionTitle>
+          <C.FirstCards>
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-        </C.FirstCards>
-        <C.SecondsCards>
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+              date="12/09/2022"
+            />
+          </C.FirstCards>
+          <C.SecondsCards>
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-          <CardMedias
-            title="Desafio verão GNDI + Fit Anywhere"
-            paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
+              date="12/09/2022"
+            />
+            <CardMedias
+              title="Desafio verão GNDI + Fit Anywhere"
+              paragraph="O Grupo NotreDame Intermédica (GNDI) e a Fit<br /> Anywhere, o maior
         aplicativo de wellness do Brasil, se<br /> juntaram para propor um desafio a
         você: praticar mais..."
-            date="12/09/2022"
-          />
-        </C.SecondsCards>
-        <C.ButtonContainer>
-          <ButtonMedias text={<CaretLeft size={20} color="#ccc" />} />
-          <ButtonMedias text="1" />
-          <ButtonMedias text="2" />
-          <ButtonMedias text="3" />
-          <ButtonMedias text="4" />
-          <ButtonMedias text="..." />
-          <ButtonMedias text="9" />
-          <ButtonMedias text="10" />
-          <ButtonMedias text={<CaretRight size={20} />} />
-        </C.ButtonContainer>
+              date="12/09/2022"
+            />
+          </C.SecondsCards>
+          <C.ButtonContainer>
+            <ButtonMedias text={<CaretLeft size={20} color="#ccc" />} />
+            <ButtonMedias text="1" />
+            <ButtonMedias text="2" />
+            <ButtonMedias text="3" />
+            <ButtonMedias text="4" />
+            <ButtonMedias text="..." />
+            <ButtonMedias text="9" />
+            <ButtonMedias text="10" />
+            <ButtonMedias text={<CaretRight size={20} />} />
+          </C.ButtonContainer>
+        </C.AlignContent>
       </C.CardContainer>
       <Form
         title="Receba notícias por e-mail"

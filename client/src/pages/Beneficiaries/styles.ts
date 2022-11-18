@@ -143,6 +143,10 @@ export const Content2 = styled.div`
   position: relative;
 
   .first-content {
+    height: 100%;
+    width: 50%;
+
+    background-color: #ffffff;
   }
 
   .second-content {
@@ -151,6 +155,8 @@ export const Content2 = styled.div`
 
     background-image: url(${ShuterBack});
     background-repeat: no-repeat;
+
+    z-index: -1;
 
     position: absolute;
     top: 0;
@@ -171,7 +177,7 @@ export const Content2 = styled.div`
 
       color: #0054b8;
 
-      margin-top: 50px;
+      padding-top: 50px;
     }
   }
 
@@ -345,6 +351,6 @@ export const Content3 = styled.div`
 `;
 
 export const AlignContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

@@ -53,7 +53,7 @@ export const BedroomContent = styled.div`
       background: #0054b8;
       border-radius: 40px;
 
-      width: 365px;
+      width: 340px;
       padding: 16px 40px;
 
       border: none;
@@ -80,7 +80,7 @@ export const Form = styled.form`
   .inputs-bedroom {
     padding: 20px 12px;
 
-    width: 365px;
+    width: 340px;
 
     border: 1px solid #0054b8;
     border-radius: 10px;
@@ -115,7 +115,7 @@ export const Selects = styled.div`
   .inputs-selects-bedroom {
     padding: 20px 12px;
 
-    width: 365px;
+    width: 340px;
 
     border: 1px solid #0054b8;
     border-radius: 10px;
@@ -141,6 +141,6 @@ export const Selects = styled.div`
 `;
 
 export const AlignItens = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

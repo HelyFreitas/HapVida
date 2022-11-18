@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  .row-hr{
+    width: 100%;
+    height: 7px;
+
+    background-color: #0054b8;
+
+    margin-bottom: 70px;
+  }
+`;
 
 export const Content1 = styled.div`
   display: flex;
@@ -8,7 +17,7 @@ export const Content1 = styled.div`
   justify-content: center;
   align-items: center;
 
-  border-bottom: 10px solid #0054b8;
+  border-bottom: 7px solid #0054b8;
 
   padding-bottom: 88px;
 `;
@@ -154,4 +163,9 @@ export const ParagraphThirdCard = styled.p`
   color: #0054b8;
   margin-left: 20px;
   margin-bottom: 16px;
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1100px;
+  width: 100%;
 `;

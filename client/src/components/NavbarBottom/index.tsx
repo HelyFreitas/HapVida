@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Logo1 from "../../assets/logo1.png";
+import { DropdownBtn } from "../DropdownBtn";
 import { ModalRoutes } from "../ModalRoutes";
 
 import * as C from "./styles";
@@ -26,13 +27,14 @@ export const NavbarBottom = () => {
           <Link className="top-menu-nav" to="/service-networks">
             Rede de atendimento
           </Link>
-          <div className="menu-nav">
+          {/* <div className="menu-nav">
             <p className="top-menu-p">Acesse sua área</p>
             <button onClick={showModal} className="btn-top-nav">
               <ArrowCircleDown size={20} color="#58585a" />
             </button>
             {state && <ModalRoutes active={setState} />}
-          </div>
+          </div> */}
+          <DropdownBtn />
           <Link to="/plans" className="top-menu-btn">
             Conhecer Planos
           </Link>

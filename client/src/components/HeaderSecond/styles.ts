@@ -9,14 +9,17 @@ export const Container = styled.header`
 
   border-bottom: 7px solid #0054b8;
 
-  z-index: 1;
   position: relative;
 
   .first-content {
     width: 59%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
+
+    background-color: #ffffff;
+    /* box-shadow: 35px -14px 20px -13px white; */
 
     .header-x {
       display: flex;
@@ -30,11 +33,7 @@ export const Container = styled.header`
         font-weight: 600;
         font-size: 16px;
         line-height: 15px;
-        /* identical to box height */
-
         letter-spacing: 0.08px;
-
-        /* Neutral / Gray 1 */
 
         color: #5b5b5f;
       }
@@ -45,11 +44,7 @@ export const Container = styled.header`
         font-weight: 600;
         font-size: 16px;
         line-height: 15px;
-        /* identical to box height */
-
         letter-spacing: 0.08px;
-
-        /* Neutral / Gray 1 */
 
         color: #0054b8;
       }
@@ -88,8 +83,6 @@ export const Container = styled.header`
       line-height: 60px;
       letter-spacing: 0.08px;
 
-      /* Branding/Hapvida_Blue */
-
       color: #0054b8;
     }
 
@@ -111,6 +104,7 @@ export const Container = styled.header`
 
   .second-content {
     height: 100%;
+    width: 48%;
     position: absolute;
     top: 0;
     right: 0;
@@ -124,24 +118,23 @@ export const Container = styled.header`
         width: 100%;
         height: 100%;
 
+        /* object-fit: contain; */
+
         border-left: white 2px blur(4px);
       }
     }
-
-    /* .abs-div {
-      height: 100%;
-      width: 20px;
-
-      filter: drop-shadow(-15px 0px 11px #000000);
-      -webkit-filter: drop-shadow(-15px 0px 11px #000000);
-      -moz-filter: drop-shadow(-15px 0px 11px #000000);
-    } */
   }
 `;
 
-export const Content1 = styled.div``;
+export const Content1 = styled.div`
+  height: 100%;
+
+  background-color: white;
+
+  z-index: 1;
+`;
 
 export const AlignContent = styled.div`
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
 `;

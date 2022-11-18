@@ -1,18 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    .divisorcontent{
-        width: 100%;
-        height: 10px;
+  .divisorcontent {
+    width: 100%;
+    height: 10px;
 
-        background-color: #0054b8;
-        
-        margin-bottom: 46px;
-    }
+    background-color: #0054b8;
+
+    margin-bottom: 46px;
+  }
 `;
 
 export const Content1 = styled.div`
-    margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  
+  margin-bottom: 90px;
 `;
 
 export const TitleContent = styled.h1`
@@ -27,13 +30,12 @@ export const TitleContent = styled.h1`
 
   width: 42%;
   display: flex;
-  justify-content: center;
   margin-top: 74px;
 `;
 
 export const Cards = styled.div`
   display: flex;
-  gap: 134px;
+  gap: 230px;
   justify-content: center;
   margin-top: 44px;
 `;
@@ -151,4 +153,9 @@ export const LinksCard2 = styled.div`
     padding: 28px 0 28px 20px;
     border-top: 1px solid #ccc;
   }
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1100px;
+  width: 100%;
 `;
