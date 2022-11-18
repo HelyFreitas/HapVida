@@ -25,7 +25,8 @@ export const CardProvider = (props: CardProviderProps) => {
             <ArrowUpRight size={20} color="#0054B8" weight="regular" />
           </Link>
           <Link to="" className="links">
-            {props.link2}
+            {props.link2}&nbsp;
+            <ArrowUpRight size={20} color="#0054B8" weight="regular" />
           </Link>
         </C.Links>
       </C.Card>

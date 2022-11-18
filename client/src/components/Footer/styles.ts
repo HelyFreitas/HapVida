@@ -24,8 +24,7 @@ export const Content = styled.div`
     .row-content {
       display: flex;
       align-items: center;
-
-      margin-bottom: 166px;
+      align-self: flex-start;
 
       .links-footer {
         font-family: "Source Sans Pro";
@@ -35,7 +34,7 @@ export const Content = styled.div`
         line-height: 150%;
 
         letter-spacing: -0.022em;
-        text-decoration-line: underline;
+        text-decoration: none;
 
         color: #0054b8;
 
@@ -84,6 +83,8 @@ export const Content = styled.div`
         text-decoration-line: underline;
 
         color: #0054b8;
+
+        text-decoration: none;
 
         flex: none;
         order: 0;

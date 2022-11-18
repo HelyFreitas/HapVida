@@ -141,9 +141,9 @@ export const Home = () => {
               />
             </div>
             <div className="btn-position">
-              <Link to="/notices" className="third-content-btn">
+              <a href="/notices" className="third-content-btn">
                 Ver mais notícias
-              </Link>
+              </a>
             </div>
           </C.AlignFirstContent>
         </C.ThirdContent>

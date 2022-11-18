@@ -2,12 +2,12 @@ import { CaretCircleDown, CaretCircleUp } from "phosphor-react";
 import { useState } from "react";
 import "./styles.css";
 
-export const DropdownBtn = () => {
+export const DropdownBtnFooter = () => {
   const [state, setState] = useState<boolean>();
 
   return (
     <>
-      <div className="dropdown">
+      <div className="dropdown2">
         <button
           onMouseOver={() => {
             setState(true);
@@ -15,20 +15,20 @@ export const DropdownBtn = () => {
           onMouseOut={() => {
             setState(false);
           }}
-          className="dropbtn"
+          className="dropbtn2"
         >
           Acesse sua área&nbsp;
           {state ? (
             <>
-              <CaretCircleUp size={16} color="#0054b8" />
+              <CaretCircleUp size={20} color="#0054b8" />
             </>
           ) : (
             <>
-              <CaretCircleDown size={16} color="#0054b8" />
+              <CaretCircleDown size={20} color="#0054b8" />
             </>
           )}
         </button>
-        <div className="dropdown-content">
+        <div className="dropdown-content2">
           <a href="/beneficiaries">Beneficiários</a>
           <a href="/providers">Corretores</a>
           <a href="/broker">Prestadores</a>
