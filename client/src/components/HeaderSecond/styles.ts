@@ -5,20 +5,18 @@ export const Container = styled.header`
   height: auto;
 
   display: flex;
+  justify-content: center;
 
   border-bottom: 7px solid #0054b8;
+
+  z-index: 1;
+  position: relative;
 
   .first-content {
     width: 59%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding-left: 80px;
-
-    gap: 10px;
 
     .header-x {
       display: flex;
@@ -112,8 +110,10 @@ export const Container = styled.header`
   }
 
   .second-content {
-    position: relative;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     .second-content-content {
       height: 100%;
@@ -140,3 +140,8 @@ export const Container = styled.header`
 `;
 
 export const Content1 = styled.div``;
+
+export const AlignContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
+`;

@@ -14,32 +14,30 @@ export const NavbarBottom = () => {
 
   return (
     <C.Container>
-      <C.ContainerContent>
+      <C.PositionContent>
         <div className="top-menu-content2">
           <img src={Logo1} alt="" className="top-container-logo" />
-          <div className="itens-nav">
-            <Link to="/about-institutional" className="top-menu-nav">
-              Institucional
-            </Link>
-            <a className="top-menu-nav" href="#">
-              Investidores <ArrowUpRight size={14} />
-            </a>
-            <Link className="top-menu-nav" to="/service-networks">
-              Rede de atendimento
-            </Link>
-            <div className="menu-nav">
-              <p className="top-menu-p">Acesse sua área</p>
-              <button onClick={showModal} className="btn-top-nav">
-                <ArrowCircleDown size={20} color="#58585a" />
-              </button>
-              {state && <ModalRoutes active={setState} />}
-            </div>
+          <Link to="/about-institutional" className="top-menu-nav">
+            Institucional
+          </Link>
+          <a className="top-menu-nav" href="#">
+            Investidores <ArrowUpRight size={14} />
+          </a>
+          <Link className="top-menu-nav" to="/service-networks">
+            Rede de atendimento
+          </Link>
+          <div className="menu-nav">
+            <p className="top-menu-p">Acesse sua área</p>
+            <button onClick={showModal} className="btn-top-nav">
+              <ArrowCircleDown size={20} color="#58585a" />
+            </button>
+            {state && <ModalRoutes active={setState} />}
           </div>
           <Link to="/plans" className="top-menu-btn">
             Conhecer Planos
           </Link>
         </div>
-      </C.ContainerContent>
+      </C.PositionContent>
     </C.Container>
   );
 };

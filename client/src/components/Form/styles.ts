@@ -73,9 +73,7 @@ export const BedroomContent = styled.div`
 export const Form = styled.form`
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  gap: 50px;
+  justify-content: space-between;
 
   margin-top: 35px;
 
@@ -110,9 +108,7 @@ export const Form = styled.form`
 export const Selects = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  gap: 50px;
+  justify-content: space-between;
 
   margin-top: 26px;
 
@@ -142,4 +138,9 @@ export const Selects = styled.div`
 
     color: #0054b8;
   }
+`;
+
+export const AlignItens = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;

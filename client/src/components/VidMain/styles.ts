@@ -2,27 +2,29 @@ import styled from "styled-components";
 import VidBack from "../../assets/vid.png";
 
 export const Container = styled.div`
-    .vid{
-        background-image: url(${VidBack});
-        background-repeat: no-repeat;
-        background-size: cover;
+  width: 100%;
 
-        width: 650px;
-        height: 345px;
+  .vid {
+    background-image: url(${VidBack});
+    background-repeat: no-repeat;
+    background-size: cover;
 
-        position: relative;
+    max-width: 1300px;
+    width: 100%;
+    height: 664px;
 
-        margin-left: 85px;
-        margin-top: 18px;
+    position: relative;
 
-        .vid-btn{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+    margin-top: 18px;
 
-            width: 80px;
-            height: 80px;
-        }
+    .vid-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 80px;
+      height: 80px;
     }
+  }
 `;

@@ -2,41 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   border-bottom: 1px solid #ccccd0;
-/* 
-  .top-menu-content1 {
-    display: flex;
 
-    width: 100%;
+  display: flex;
+  justify-content: center;
 
-    background-color: #000000;
-
-    justify-content: right;
-    padding-right: 110px;
-
-    .top-menu-content1-p {
-      color: #ffffff;
-
-      padding-right: 5px;
-
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 12px;
-
-      display: flex;
-      align-items: center;
-    }
-  } */
+  width: 100%;
 
   .top-menu-content2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
-
-    .itens-nav {
-      display: flex;
+    justify-content: space-between;
 
       .menu-nav {
         display: flex;
@@ -87,7 +62,6 @@ export const Container = styled.div`
       padding-top: 5px;
       padding-bottom: 5px;
     }
-  }
 
   .top-menu-btn {
     background: #0054b8;
@@ -108,6 +82,7 @@ export const Container = styled.div`
   }
 `;
 
-export const ContainerContent = styled.div`
+export const PositionContent = styled.div`
   max-width: 1300px;
+  width: 100%;
 `;

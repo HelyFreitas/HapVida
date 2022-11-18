@@ -10,14 +10,21 @@ export const CardContainer = styled.div`
   height: 564px;
 
   display: flex;
-  align-items: center;
+  justify-content: center;
+
+  .divivi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+    width: 50%;
+    align-items: center;
+  }
 
   .text {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    margin-left: 119px;
   }
 
   .paragraph-card-price {
@@ -34,6 +41,7 @@ export const CardContainer = styled.div`
       color: #db6e2d;
     }
   }
+
   .soli-card {
     width: 335px;
 
@@ -53,4 +61,9 @@ export const CardContainer = styled.div`
 
     color: #ffffff;
   }
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;

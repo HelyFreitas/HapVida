@@ -19,11 +19,11 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
+  display: flex;
+  justify-content: center;
+
   .row-hr {
     width: 100%;
-
-    display: flex;
-    justify-content: center;
 
     margin-bottom: 62px;
 
@@ -50,9 +50,6 @@ export const FormContainer = styled.div`
     color: #0054b8;
 
     margin-top: 74px;
-    margin-left: 70px;
-
-    width: 100%;
   }
 
   .form-paragraph {
@@ -65,7 +62,6 @@ export const FormContainer = styled.div`
 
     color: #5b5b5f;
 
-    margin-left: 70px;
     margin-bottom: 34px;
   }
 `;
@@ -104,10 +100,7 @@ export const SelectAndBtn = styled.div`
 export const SelectsForm = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  /* gap: 70px */
-  gap: 50px;
+  justify-content: space-between;
 
   margin-bottom: 40px;
 
@@ -176,15 +169,10 @@ export const FormNetwork = styled.div`
 
     color: #5b5b5f;
 
-    margin-left: 70px;
     margin-bottom: 20px;
   }
 
   .center-select {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
     .select-form-search {
       display: flex;
       flex-direction: row;
@@ -192,7 +180,7 @@ export const FormNetwork = styled.div`
       padding: 12px;
       gap: 16px;
 
-      width: 1230px;
+      width: 100%;
       height: 48px;
 
       color: #0054b8;
@@ -234,4 +222,9 @@ export const FormNetwork = styled.div`
 
     margin-bottom: 86px;
   }
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;

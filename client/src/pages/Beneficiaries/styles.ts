@@ -14,75 +14,6 @@ export const Main = styled.main`
     margin-bottom: 68px;
   }
 
-  .divisor3 {
-    width: 100%;
-    height: 10px;
-
-    background-color: #0054b8;
-
-    margin-bottom: 46px;
-  }
-
-  .title-cards-media {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    margin-left: 70px;
-    margin-bottom: 40px;
-
-    .title-card-media {
-      font-family: "Source Sans Pro";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 45px;
-      letter-spacing: 0.08px;
-
-      /* Branding/Hapvida_Blue */
-
-      color: #0054b8;
-    }
-  }
-
-  .cards-medias {
-    display: flex;
-    justify-content: center;
-
-    gap: 65px;
-  }
-
-  .btn-position-card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 58px;
-    margin-bottom: 76px;
-  }
-
-  .third-content-card-btn {
-    width: 336px;
-    height: 56px;
-
-    justify-content: center;
-
-    background: #0054b8;
-    border-radius: 40px;
-    border: none;
-
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-
-    color: #ffffff;
-  }
-
   .divisor2 {
     width: 100%;
     height: 7px;
@@ -92,7 +23,8 @@ export const Main = styled.main`
 `;
 
 export const Content1 = styled.div`
-  padding-left: 70px;
+  display: flex;
+  justify-content: center;
 
   .content1-title {
     font-family: "Source Sans Pro";
@@ -203,22 +135,27 @@ export const Content1 = styled.div`
 `;
 
 export const Content2 = styled.div`
-  width: 100%;
-  height: 496px;
-
   display: flex;
-  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  position: relative;
 
   .first-content {
-    width: 50%;
-    height: 100%;
   }
 
   .second-content {
-    width: 50%;
+    width: 790px;
     height: 100%;
 
     background-image: url(${ShuterBack});
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .title-position {
@@ -235,7 +172,6 @@ export const Content2 = styled.div`
       color: #0054b8;
 
       margin-top: 50px;
-      margin-left: 70px;
     }
   }
 
@@ -244,8 +180,8 @@ export const Content2 = styled.div`
       width: 485px;
       height: 250px;
 
-      margin-left: 70px;
       margin-top: 45px;
+      margin-bottom: 100px;
 
       background: #ffffff;
       border: 1px solid #c0c0c0;
@@ -344,4 +280,71 @@ export const Content2 = styled.div`
       }
     }
   }
+`;
+
+export const Content3 = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .title-cards-media {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    .title-card-media {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      letter-spacing: 0.08px;
+
+      /* Branding/Hapvida_Blue */
+
+      color: #0054b8;
+    }
+  }
+
+  .cards-medias {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-position-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 58px;
+    margin-bottom: 76px;
+  }
+
+  .third-content-card-btn {
+    width: 336px;
+    height: 56px;
+
+    justify-content: center;
+
+    background: #0054b8;
+    border-radius: 40px;
+    border: none;
+
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;

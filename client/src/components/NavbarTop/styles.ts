@@ -2,20 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
 
   width: 100%;
 
   background-color: #000000;
-
-  /* justify-content: right; */
 `;
 
 export const ContainerLimit = styled.div`
   max-width: 1300px;
+  width: 100%;
 `;
 
 export const Texts = styled.div`
   display: flex;
+  justify-content: right;
 `;
 
 export const Img = styled.img``;

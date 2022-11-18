@@ -20,7 +20,7 @@ export const Header = styled.header`
 
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 
   position: relative;
 
@@ -103,9 +103,12 @@ export const Main = styled.main`
 `;
 
 export const FirstContent = styled.div`
+  display: flex;
+  justify-content: center;
+
   .itens-main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     margin-top: 60px;
 
@@ -173,7 +176,6 @@ export const FirstContent = styled.div`
   }
 
   .paragraph-main {
-    margin-left: 85px;
     margin-top: 41px;
 
     .paragraph-main-title {
@@ -205,7 +207,7 @@ export const FirstContent = styled.div`
   .cards-itens-main {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     margin-bottom: 65px;
 
@@ -262,11 +264,12 @@ export const FirstContent = styled.div`
 `;
 
 export const SecondContent = styled.div`
+      display: flex;
+    justify-content: center;
+
   .vid-texts {
     display: flex;
     flex-direction: column;
-
-    margin-left: 85px;
 
     .vid-title {
       font-family: "Source Sans Pro";
@@ -297,24 +300,28 @@ export const SecondContent = styled.div`
 
   .vids-contents {
     display: flex;
-
-    gap: 65px;
+    justify-content: space-between;
 
     position: relative;
   }
 
   .circles-c {
     margin-top: 40px;
-    margin-left: 600px;
     margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
   }
 `;
 
 export const ThirdContent = styled.div`
+  display: flex;
+  justify-content: center;
+
   .card-media-div {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .btn-position {
@@ -363,12 +370,20 @@ export const TitleThirdContent = styled.h1`
   color: #0054b8;
 
   margin-top: 58px;
-  margin-left: 65px;
   margin-bottom: 30px;
 `;
 
-export const AlignDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 60%;
+export const AlignHeader = styled.div`
+  max-width: 1300px;
+  width: 100%;
+`;
+
+export const AlignFirstContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
+`;
+
+export const AlignSecondContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;

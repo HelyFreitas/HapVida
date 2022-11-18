@@ -10,10 +10,10 @@ import Cruz from "../../assets/cruz.png";
 import Dente from "../../assets/dente.png";
 
 interface CardsProps {
-  title : string;
+  title: string;
 }
 
-export const Cards = (props : CardsProps) => {
+export const Cards = (props: CardsProps) => {
   return (
     <S.Container>
       <div className="container-second-content">
@@ -24,13 +24,13 @@ export const Cards = (props : CardsProps) => {
           <div className="card-div" />
           <img className="client-png" src={Client} alt="" />
           <h1 className="cards-title">+15 Milhões</h1>
-          <p className="cards-paragraph">com Rede Própria</p>
+          <p className="cards-paragraph">de Clientes</p>
         </section>
         <section className="cards-sect">
           <div className="card-div" />
           <img className="client-png" src={Local} alt="" />
           <h1 className="cards-title">20 Estados</h1>
-          <p className="cards-paragraph">de Clientes</p>
+          <p className="cards-paragraph">com Rede Própria</p>
         </section>
         <section className="cards-sect">
           <div className="card-div" />

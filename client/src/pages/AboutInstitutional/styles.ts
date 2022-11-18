@@ -10,14 +10,25 @@ export const Container = styled.div`
     margin-top: 90px;
     margin-bottom: 65px;
   }
+
+  .divisor-primary {
+    background-color: #f49e00;
+
+    width: 100%;
+    height: 7px;
+  }
 `;
 
 export const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   .title-main {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 
     .title-main-second {
       font-family: "Source Sans Pro";
@@ -73,13 +84,6 @@ export const Main = styled.main`
     letter-spacing: 0.08px;
 
     color: #5b5b5f;
-  }
-
-  .divisor-primary {
-    background-color: #f49e00;
-
-    width: 100%;
-    height: 7px;
   }
 `;
 
@@ -146,4 +150,9 @@ export const HpvidaNotreDame = styled.div`
 
     object-fit: contain;
   }
+`;
+
+export const AlignContent = styled.div`
+  max-width: 1300px;
+  width: 100%;
 `;
