@@ -9,6 +9,7 @@ import { Beneficiaries } from "../pages/Beneficiaries";
 import { Notices } from "../pages/Notices";
 import { WorkWithUs } from "../pages/WorkWithUs";
 import { PlansEmployes } from "../pages/PlansEmployes";
+import { PlansFamily } from "../pages/PlansFamily";
 
 export const Rotas = () => {
   return (
@@ -24,6 +25,7 @@ export const Rotas = () => {
         <Route path="/notices" element={<Notices />} />
         <Route path="/work-with-us" element={<WorkWithUs />} />
         <Route path="/plans-employes" element={<PlansEmployes />} />
+        <Route path="/plans-family" element={<PlansFamily />} />
       </Routes>
     </Router>
   );

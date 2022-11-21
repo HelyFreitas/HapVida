@@ -13,6 +13,7 @@ import { Cards } from "../../components/Cards";
 import { Footer } from "../../components/Footer";
 import { NavbarBottom } from "../../components/NavbarBottom";
 import { NavbarTop } from "../../components/NavbarTop";
+import { ArrowCircleDownRight, ArrowCircleRight } from "phosphor-react";
 
 export const Plans = () => {
   return (
@@ -37,6 +38,9 @@ export const Plans = () => {
               <C.ParagraphFirstCard>
                 Veja as soluções exclusivas para você e seus familiares.
               </C.ParagraphFirstCard>
+              <C.FirstCardBtn href="/plans-family">
+                <ArrowCircleRight color="#0054B8" weight="fill" size={28} />
+              </C.FirstCardBtn>
             </C.FirstCard>
             <C.SecondCard>
               <C.SecondCardImg src={Home} />
@@ -44,6 +48,9 @@ export const Plans = () => {
               <C.ParagraphSecondCard>
                 Veja as soluções exclusivas para pequenas e médias empresas
               </C.ParagraphSecondCard>
+              <C.SecondCardBtn href="/plans-employes">
+                <ArrowCircleRight color="#0054B8" weight="fill" size={28} />
+              </C.SecondCardBtn>
             </C.SecondCard>
             <C.ThirdCard>
               <C.ThirdCardImg src={Employer} />
@@ -51,6 +58,9 @@ export const Plans = () => {
               <C.ParagraphThirdCard>
                 Veja as soluções corporativas exclusivas
               </C.ParagraphThirdCard>
+              <C.ThirdCardBtn>
+                <ArrowCircleRight color="#0054B8" weight="fill" size={28} />
+              </C.ThirdCardBtn>
             </C.ThirdCard>
           </C.CardsContainer>
         </C.AlignContent>

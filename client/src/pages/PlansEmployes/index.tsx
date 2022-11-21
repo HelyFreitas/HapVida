@@ -17,7 +17,7 @@ export const PlansEmployes = () => {
         img={PlansBack}
         title="Planos para Pequenas e Médias Empresas"
         paragraph="Conte com benefícios exclusivos para saúde  dos seus colaboradores."
-        link="/"
+        link="/plans"
       />
       <C.CardsContainer>
         <Cards title="Hapvida + NotreDame juntas oferecem:" />

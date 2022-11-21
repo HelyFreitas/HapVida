@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import Logo1 from "../../assets/logo1.png";
 import { DropdownBtn } from "../DropdownBtn";
-import { ModalRoutes } from "../ModalRoutes";
 
 import * as C from "./styles";
 
@@ -17,7 +16,9 @@ export const NavbarBottom = () => {
     <C.Container>
       <C.PositionContent>
         <div className="top-menu-content2">
-          <img src={Logo1} alt="" className="top-container-logo" />
+          <a href="/">
+            <img src={Logo1} alt="" className="top-container-logo" />
+          </a>
           <Link to="/about-institutional" className="top-menu-nav">
             Institucional
           </Link>

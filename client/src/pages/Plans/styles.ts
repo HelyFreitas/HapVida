@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  .row-hr{
+  .row-hr {
     width: 100%;
     height: 7px;
 
@@ -52,10 +52,11 @@ export const FirstCard = styled.div`
   border: 1px solid #c0c0c0;
   border-radius: 10px;
   border-left: 10px solid #0054b8;
+  position: relative;
 `;
 
 export const FirstCardImg = styled.img`
-  width: 45px;
+  width: 60px;
   height: 32px;
   margin: 22px 0 0 11px;
 `;
@@ -83,16 +84,28 @@ export const ParagraphFirstCard = styled.p`
   margin-bottom: 16px;
 `;
 
+export const FirstCardBtn = styled.a`
+  position: absolute;
+  top: 42%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+`;
+
 export const SecondCard = styled.div`
   height: 200px;
 
   display: flex;
   flex-direction: column;
-  width: 366px;
+  width: 375px;
   background: #ffffff;
   border: 1px solid #c0c0c0;
   border-radius: 10px;
   border-left: 10px solid #0054b8;
+  position: relative;
 `;
 
 export const SecondCardImg = styled.img`
@@ -124,16 +137,28 @@ export const ParagraphSecondCard = styled.p`
   margin-bottom: 16px;
 `;
 
+export const SecondCardBtn = styled.a`
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+`;
+
 export const ThirdCard = styled.div`
   height: 200px;
 
   display: flex;
   flex-direction: column;
-  width: 366px;
+  width: 375px;
   background: #ffffff;
   border: 1px solid #c0c0c0;
   border-radius: 10px;
   border-left: 10px solid #0054b8;
+  position: relative;
 `;
 
 export const ThirdCardImg = styled.img`
@@ -163,6 +188,17 @@ export const ParagraphThirdCard = styled.p`
   color: #0054b8;
   margin-left: 20px;
   margin-bottom: 16px;
+`;
+
+export const ThirdCardBtn = styled.a`
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
 `;
 
 export const AlignContent = styled.div`

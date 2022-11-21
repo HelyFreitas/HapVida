@@ -132,6 +132,10 @@ export const Content1 = styled.div`
   background-color: white;
 
   z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const AlignContent = styled.div`

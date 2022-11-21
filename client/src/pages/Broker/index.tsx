@@ -9,6 +9,8 @@ import { Footer } from "../../components/Footer";
 import { NavbarTop } from "../../components/NavbarTop";
 import { NavbarBottom } from "../../components/NavbarBottom";
 import { DropdownBtn } from "../../components/DropdownBtn";
+import { CardsPlans2 } from "../../components/CardsPlans2";
+import { CardsPlans3 } from "../../components/CardsPlans3";
 
 export const Broker = () => {
   return (
@@ -24,44 +26,28 @@ export const Broker = () => {
       <C.Content1>
         <C.AlignContent>
           <C.TitleContent>Selecione uma das opções:</C.TitleContent>
-          <C.Cards>
-            <C.Card1>
-              <C.TextCard1>
-                <C.SubtitleCard1>Prestador</C.SubtitleCard1>
-                <C.TitleCard1>Hapvida</C.TitleCard1>
-              </C.TextCard1>
-              <C.LinksCard1>
-                <Link to="" className="linkscards1">
-                  Portal do Odonto&nbsp;
-                  <ArrowUpRight />
-                </Link>
-                <Link to="" className="linkscards1">
-                  SAVI&nbsp;
-                  <ArrowUpRight />
-                </Link>
-                <Link to="" className="linkscards1">
-                  Rede Própria&nbsp;
-                  <ArrowUpRight />
-                </Link>
-              </C.LinksCard1>
-            </C.Card1>
-            <C.Card2>
-              <C.TextCard2>
-                <C.SubtitleCard2>Prestador</C.SubtitleCard2>
-                <C.TitleCard2>NDI</C.TitleCard2>
-              </C.TextCard2>
-              <C.LinksCard2>
-                <Link to="" className="linkscards2">
-                  Odonto&nbsp;
-                  <ArrowUpRight />
-                </Link>
-                <Link to="" className="linkscards2">
-                  Saúde&nbsp;
-                  <ArrowUpRight />
-                </Link>
-              </C.LinksCard2>
-            </C.Card2>
-          </C.Cards>
+          <C.CardsContent>
+            <CardsPlans3
+              subtitle1="Prestador"
+              title1="Hapvida"
+              paragraph=""
+              link1=""
+              linktext1="Portal do Odonto"
+              link2=""
+              linktext2="SAVI"
+              link3=""
+              linktext3="Rede Própria"
+            />
+            <CardsPlans2
+              subtitle1="Prestador"
+              title1="NDI"
+              paragraph=""
+              link1=""
+              linktext1="Odonto"
+              link2=""
+              linktext2="Saúde"
+            />
+          </C.CardsContent>
         </C.AlignContent>
       </C.Content1>
       <Footer />

@@ -13,29 +13,29 @@ export const Footer = () => {
     <F.Container>
       <F.Content>
         <div className="img-footer">
-          <Link to="/">
+          <a href="/">
             <img src={Logo} alt="" />
-          </Link>
+          </a>
         </div>
         <div className="cont">
           <DropdownBtnFooter />
           <div className="row-content">
-            <Link className="links-footer" to="#">
+            <a className="links-footer" href="/about-institutional">
               Institucional
-            </Link>
-            <Link className="links-footer" to="#">
+            </a>
+            <a className="links-footer" href="#">
               Investidores &nbsp;
               <ArrowUpRight size={20} />
-            </Link>
-            <Link className="links-footer" to="#">
+            </a>
+            <a className="links-footer" href="/service-networks">
               Rede de Atendimento
-            </Link>
-            <Link className="links-footer" to="#">
+            </a>
+            <a className="links-footer" href="/work-with-us">
               Trabalhe Conosco
-            </Link>
-            <Link className="links-footer" to="#">
+            </a>
+            <a className="links-footer" href="/plans">
               Planos
-            </Link>
+            </a>
           </div>
         </div>
       </F.Content>
