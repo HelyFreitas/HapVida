@@ -8,9 +8,6 @@ import { DropdownBtn } from "../DropdownBtn";
 import * as C from "./styles";
 
 export const NavbarBottom = () => {
-  const [state, setState] = useState(false);
-
-  const showModal = () => setState(!state);
 
   return (
     <C.Container>
@@ -28,17 +25,12 @@ export const NavbarBottom = () => {
           <Link className="top-menu-nav" to="/service-networks">
             Rede de atendimento
           </Link>
-          {/* <div className="menu-nav">
-            <p className="top-menu-p">Acesse sua área</p>
-            <button onClick={showModal} className="btn-top-nav">
-              <ArrowCircleDown size={20} color="#58585a" />
-            </button>
-            {state && <ModalRoutes active={setState} />}
-          </div> */}
           <DropdownBtn />
           <Link to="/plans" className="top-menu-btn">
             Conhecer Planos
           </Link>
+          <div className="btncont">
+          </div>
         </div>
       </C.PositionContent>
     </C.Container>

@@ -141,4 +141,8 @@ export const Content1 = styled.div`
 export const AlignContent = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;

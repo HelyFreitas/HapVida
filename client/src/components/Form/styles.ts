@@ -102,6 +102,10 @@ export const Form = styled.form`
     &::placeholder {
       color: #0054b8;
     }
+
+    @media screen and (max-width: 1024px) {
+      width: 300px;
+    }
   }
 `;
 
@@ -137,10 +141,18 @@ export const Selects = styled.div`
     outline: none;
 
     color: #0054b8;
+
+    @media screen and (max-width: 1024px) {
+      width: 300px;
+    }
   }
 `;
 
 export const AlignItens = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;

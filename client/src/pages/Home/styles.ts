@@ -75,7 +75,7 @@ export const Header = styled.header`
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-    
+
     text-decoration: none;
 
     color: #ffffff;
@@ -269,8 +269,8 @@ export const FirstContent = styled.div`
 `;
 
 export const SecondContent = styled.div`
-      display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
   .vid-texts {
     display: flex;
@@ -381,14 +381,26 @@ export const TitleThirdContent = styled.h1`
 export const AlignHeader = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;
 
 export const AlignFirstContent = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;
 
 export const AlignSecondContent = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;

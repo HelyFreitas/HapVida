@@ -149,7 +149,7 @@ export const Home = () => {
               />
             </div>
             <div className="btn-position">
-              <a href="/notices" className="third-content-btn">
+              <a href="/notices2" className="third-content-btn">
                 Ver mais notícias
               </a>
             </div>

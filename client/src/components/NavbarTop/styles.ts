@@ -12,6 +12,10 @@ export const Container = styled.div`
 export const ContainerLimit = styled.div`
   max-width: 1100px;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    width: 950px;
+  }
 `;
 
 export const Texts = styled.div`
