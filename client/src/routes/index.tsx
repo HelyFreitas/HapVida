@@ -10,6 +10,7 @@ import { Notices } from "../pages/Notices";
 import { WorkWithUs } from "../pages/WorkWithUs";
 import { PlansEmployes } from "../pages/PlansEmployes";
 import { PlansFamily } from "../pages/PlansFamily";
+import { BusinesPlans } from "../pages/BusinesPlans";
 
 export const Rotas = () => {
   return (
@@ -26,6 +27,7 @@ export const Rotas = () => {
         <Route path="/work-with-us" element={<WorkWithUs />} />
         <Route path="/plans-employes" element={<PlansEmployes />} />
         <Route path="/plans-family" element={<PlansFamily />} />
+        <Route path="/busines-plans" element={<BusinesPlans />} />
       </Routes>
     </Router>
   );

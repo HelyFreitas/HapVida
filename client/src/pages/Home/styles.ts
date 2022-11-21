@@ -173,6 +173,9 @@ export const FirstContent = styled.div`
         color: #db6e2d;
 
         border: none;
+        text-decoration: none;
+
+        text-align: center;
       }
     }
   }

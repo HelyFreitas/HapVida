@@ -33,7 +33,9 @@ export const Home = () => {
               A maior rede própria de atendimento do Brasil.
             </p>
             <img src={Logo1} className="header-img" />
-            <Link to="/about-institutional" className="header-btn">Sobre a Fusão Hapvida e GNDI</Link>
+            <Link to="/about-institutional" className="header-btn">
+              Sobre a Fusão Hapvida e GNDI
+            </Link>
             <div className="circles-header">
               <Circles />
             </div>
@@ -56,7 +58,9 @@ export const Home = () => {
                   Mais saúde de qualidade.
                   <br /> Mais perto de você.
                 </p>
-                <button className="card-plan-btn">Conhecer planos</button>
+                <a href="/plans" className="card-plan-btn">
+                  Conhecer planos
+                </a>
               </div>
             </section>
 
@@ -74,23 +78,27 @@ export const Home = () => {
                 <p className="card-p">
                   Conheça nossos planos e faça sua cotação.
                 </p>
-                <ArrowCircleRight
-                  className="icon-card"
-                  size={28}
-                  color="#0054B8"
-                  weight="fill"
-                />
+                <a href="/plans">
+                  <ArrowCircleRight
+                    className="icon-card"
+                    size={28}
+                    color="#0054B8"
+                    weight="fill"
+                  />
+                </a>
               </div>
               <div className="card2">
                 <img className="card-img" src={EmployerPng} alt="" />
                 <h1 className="card-title">Empresas</h1>
                 <p className="card-p">Consulte serviços e mais.</p>
-                <ArrowCircleRight
-                  className="icon-card"
-                  size={28}
-                  color="#0054B8"
-                  weight="fill"
-                />
+                <a href="/busines-plans">
+                  <ArrowCircleRight
+                    className="icon-card"
+                    size={28}
+                    color="#0054B8"
+                    weight="fill"
+                  />
+                </a>
               </div>
             </section>
           </C.AlignFirstContent>

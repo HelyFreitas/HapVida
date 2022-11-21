@@ -58,7 +58,7 @@ export const Plans = () => {
               <C.ParagraphThirdCard>
                 Veja as soluções corporativas exclusivas
               </C.ParagraphThirdCard>
-              <C.ThirdCardBtn>
+              <C.ThirdCardBtn href="/busines-plans">
                 <ArrowCircleRight color="#0054B8" weight="fill" size={28} />
               </C.ThirdCardBtn>
             </C.ThirdCard>

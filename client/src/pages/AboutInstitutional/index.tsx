@@ -13,6 +13,7 @@ import { Footer } from "../../components/Footer";
 import { Circles } from "../../components/Circles";
 import { NavbarTop } from "../../components/NavbarTop";
 import { NavbarBottom } from "../../components/NavbarBottom";
+import { HapvidaNotredame } from "../../components/HapvidaNotredame";
 
 export const AboutInstitutional = () => {
   return (
@@ -32,9 +33,6 @@ export const AboutInstitutional = () => {
           </div>
           <div className="vids-main">
             <VidMain />
-            {/*<div className="circles-main">
-              <Circles />
-            </div>*/}
           </div>
           <div className="text-container">
             <p className="content-text">
@@ -68,27 +66,7 @@ export const AboutInstitutional = () => {
               <br /> Juntos, somos mais fortes!
             </p>
           </div>
-          <C.HpvidaNotreDame>
-            <div className="hapvida-div">
-              <img className="img-div" src={LogoHapVida} alt="" />
-              <hr className="divs-hr" />
-              <strong className="strng-p">Hapvida, saúde para valer.</strong>
-              <p className="content-paragraph">
-                O sistema de medicina e odontologia
-                <br /> que mais cresce no Brasil
-              </p>
-              <ButtonContent text="Ler conteúdo" />
-            </div>
-            <div className="notredame-div">
-              <img className="img-div" src={LogoNotreDame} alt="" />
-              <hr className="divs-hr" />
-              <strong className="strng-p">Notredame Intermédica</strong>
-              <p className="content-paragraph">
-                Melhores soluções em saúde e<br /> odontologia
-              </p>
-              <ButtonContent text="Ler conteúdo" />
-            </div>
-          </C.HpvidaNotreDame>
+          <HapvidaNotredame />
         </C.AlignContent>
         <hr className="divisorContent" />
         <C.AlignContent>
@@ -96,7 +74,6 @@ export const AboutInstitutional = () => {
         </C.AlignContent>
       </C.Main>
       <hr className="divisor-primary" />
-
       <CardPrice />
       <Footer />
     </C.Container>
